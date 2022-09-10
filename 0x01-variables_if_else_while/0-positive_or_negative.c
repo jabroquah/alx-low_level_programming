@@ -4,14 +4,16 @@
 
 /**
 * Prints a random number and determines
-* whether it's zero, positive or negative 
-*
+* whether it's zero, positive or negative
+* main - Entry point
+* Return: Always 0 (sucess)
 */
 
 int main(void)
 {
 	int n;
 	srand(time(0));
+
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
