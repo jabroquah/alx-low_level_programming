@@ -3,15 +3,19 @@
 #include <stdio.h>
 
 /**
+* main - Entry point
+*
+* Return: Always 0 (sucess)
+*
 * Prints a random number and determines
 * whether it's zero, positive or negative
-* main - Entry point
-* Return: Always 0 (sucess)
+*
 */
 
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
@@ -19,7 +23,7 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if(n < 0)
+	else if (n < 0)
 	{
 		printf("%d is negative\n", n);
 	}
