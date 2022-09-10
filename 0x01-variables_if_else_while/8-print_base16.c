@@ -19,7 +19,7 @@ int main(void)
 		putchar(i);
 		if (i == 57)
 		{
-			i = 9666666;
+			i = 96;
 		}
 	}
 
