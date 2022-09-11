@@ -7,7 +7,7 @@ The projects in this repository were created specifically for the low-level prog
 - OS: Ubuntu 20.04.5 LTS
 - Coding style: Betty
 - Compiler: GCC 9.4.0
-- Language(s): Bash (5.0.17(1)-release), C
+- Language(s): C, Bash (5.0.17(1)-release)
 
 ## Projects
 
