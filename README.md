@@ -11,3 +11,9 @@ The projects in this repository were created specifically for the low-level prog
 
 ## Projects
 
+1. [`0x00-hello_world`](https://github.com/jabroquah/alx-low_level_programming/tree/master/0x00-hello_world)
+2. [`0x01-variables_if_else_while`](https://github.com/jabroquah/alx-low_level_programming/tree/master/0x01-variables_if_else_while)
+
+## Author
+
+Joseph Abroquah
