@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-
+#include <stdlin.h>
+#include "main.h"
 /**
 * _abs - prints the sign of a number
 * @n: the value to be calculated
