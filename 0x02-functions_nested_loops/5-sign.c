@@ -23,5 +23,8 @@ int _print_sign(int n)
 		return (-1);
 	}
 	else
-		return(0);
+	{
+		putchar('0');
+		return (0);
+	}
 }
