@@ -3,12 +3,10 @@
 /**
 * main - Entry point
 *
-* Return: Always 0 (sucess)
-*
 *
 */
 
-int main(void)
+void main(void)
 {
 	putchar(95);
 	putchar(112);
@@ -19,5 +17,4 @@ int main(void)
 	putchar(97);
 	putchar(114);
 	putchar(10);
-	return (0);
 }
