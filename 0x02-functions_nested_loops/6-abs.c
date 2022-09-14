@@ -1,16 +1,23 @@
-#include <stdio.h>
-#include <stdlin.h>
-#include "main.h"
+nclude "main.h"
+
 /**
-* _abs - prints the sign of a number
-* @n: the value to be calculated
-* Return: the absolute value 
-*
-*/
-
-
-int _print_sign(int n)
+ * _abs - Computes the absolute value of the integer passed
+ * @n: This is a real number
+ *
+ * Return: Absolute Value
+ */
+int _abs(int n)
 {
-	return (abs(n);
-
+	if (n > 0)
+	{
+		return (n);
+	}
+	else if (n < 0)
+	{
+		return (n * -1);
+	}
+	else
+	{
+		return (0);
+	}
 }
