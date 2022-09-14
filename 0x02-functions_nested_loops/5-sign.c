@@ -1,30 +1,26 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* print_sign - prints the sign of a number
-* @c: character to be checked
-* Return: 1 if c is > 0, 
-* 0 if c == 0 and 
-* -1 if c < 0
-*
-*/
-
-
-int _print_sign(int n)
+ * print_sign - Check for -ve, +ve or 0 integers
+ * @n: This is a real number
+ *
+ * Return: 0 if zero, 1 if > 0 and -1 if < 0
+ */
+int print_sign(int n)
 {
 	if (n > 0)
 	{
-		putchar('+');
+		_putchar('+');
 		return (1);
 	}
 	else if (n < 0)
 	{
-		putchar('-');	
+		_putchar('-');
 		return (-1);
 	}
 	else
 	{
-		putchar('0');
+		_putchar('0');
 		return (0);
 	}
 }
