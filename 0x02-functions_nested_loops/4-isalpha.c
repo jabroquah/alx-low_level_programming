@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
-* _islower - checks if argument is alpha character
+* _isalpha - checks if argument is alpha character
 * @c: character to be checked
 * Return: 1 if c is a letter, lowercase
 * or uppercase otherwise return 0
