@@ -1,56 +1,51 @@
 #include "main.h"
 
 /**
- * print_times_table - Prints times table up to argument n
+ * print_times_table - prints the times table
  * @n: integer argument
+ *	
  * Return: void
  */
 
-
 void print_times_table(int n)
 {
-	int a = 0;
-	int b = 0;
+	int row, column, product;
 
-	if (n >= 0 && n <= 15)
+	if (n >= 0 && n < 15)
 	{
-		for (a = 0; b <= n; b++)
+		for (row = 0; row <= n; row++)
 		{
-			for (a = 0; a <= n; a++)
-			{		
-				if (a * b >= 100)
+			for (column = 0; column <= n; column++)
+			{
+				product = row * column;
+				if (column == 0)
+					_putchar('0');
+				else if (product < 10)
 				{
-					_putchar(a * b / 100 + '0');
-					_putchar(a * b / 10 + '0');
-					_putchar(a * b % 10 + '0');
-					if (a != n)
-					{
-						_putchar(' ');
-					}
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(product % 10 + '0');
 				}
-				if (a * b >= 10 && a * b < 100)
+				else if (product >= 10 && product < 100)
 				{
-					_putchar(a * b / 10 + '0');
-					_putchar(a * b % 10 + '0');
-					if (a != n)
-					{
-						_putchar(',');
-						_putchar(' ');
-					}
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((product / 10) % 10 + '0');
+					_putchar(product % 10 + '0');
 				}
-				if (a * b < 10)
+				else if (product > 99 && product < 1000)
 				{
-					_putchar(a * b + '0');
-					if (a != n)
-					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-					}
+					_putchar(',');
+					_putchar(' ');
+					_putchar(product / 100 + '0');
+					_putchar((product / 10) % 10 + '0');
+					_putchar(product % 10 + '0');
 				}
 			}
-			a = 0;
 			_putchar('\n');
 		}
 	}
-}	
+}
