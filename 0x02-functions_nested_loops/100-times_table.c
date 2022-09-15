@@ -10,7 +10,8 @@
 
 void print_times_table(int n)
 {
-	int a = b = 0;
+	int a = 0;
+	int b = 0;
 	int units, tens;
 
 	if (a == 0 || a > 15)
