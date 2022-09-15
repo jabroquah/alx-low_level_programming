@@ -12,7 +12,7 @@ void print_times_table(int n)
 {
 	int a = 0;
 	int b = 0;
-	int units, tens;
+	int units, tens, hundreds;
 
 	if (n < 0 || n > 15)
 	{
@@ -23,27 +23,42 @@ void print_times_table(int n)
 	{
 		for (a = 0; a <= n; a++)
 		{
-			if (a * b >= 10)
+			if (a * b >= 100)
+			{
+				hundreds = a * b / 100;
+				units = a * b % 10;
+				tens = a * b / 10;
+				_putchar(hundreds + '0');
+				_putchar(tens + '0');
+				_putchar(units + '0');
+				if (a != n)
+				{
+					_putchar(',');
+					_putchar(9);
+				}
+			}
+			else if (a * b >= 10 && a * b < 100)
 			{
 				units = a * b % 10;
 				tens = a * b / 10;
 				_putchar(tens + '0');
 				_putchar(units + '0');
-				if (a != n )
+				if (a != n)
 				{
 					_putchar(',');
+					_putchar(9);
 				}
 			}
-			else 
+			else
 			{
 				_putchar(a * b + '0');
 				if (a != n)
 				{
 					_putchar(',');
+					_putchar(9);
 				}
 			}
-		}
-		a = 0;
-		_putchar('\n');
+			a = 0;
+			_putchar('\n');
 	}
-}	
+}
