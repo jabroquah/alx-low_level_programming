@@ -60,5 +60,6 @@ void print_times_table(int n)
 			}
 			a = 0;
 			_putchar('\n');
+		}
 	}
 }
