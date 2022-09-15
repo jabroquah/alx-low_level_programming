@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * times_table - Prints times table up to argument n
+ * print_times_table - Prints times table up to argument n
  * @n: integer argument
  * Return: void
  */
 
 
-void times_table(int n)
+void print_times_table(int n)
 {
 	int a = 0;
 	int b = 0;
