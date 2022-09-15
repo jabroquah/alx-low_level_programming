@@ -14,36 +14,36 @@ void print_times_table(int n)
 	int b = 0;
 	int units, tens;
 
-	if (a == 0 || a > 15)
+	if (n == 0 || n > 15)
 	{
 		return;
 	}
 
-	for (b = 0; c <= n; c++)
+	for (a = 0; b <= n; b++)
 	{
-		for (b = 0; b <= n; b++)
+		for (a = 0; a <= n; a++)
 		{
-			if (b * c >= 10)
+			if (a * b >= 10)
 			{
-				units = b * c % 10;
-				tens = b * c / 10;
+				units = a * b % 10;
+				tens = a * b / 10;
 				_putchar(tens + '0');
 				_putchar(units + '0');
-				if (b != a )
+				if (a != n )
 				{
 					_putchar(',');
 				}
 			}
 			else 
 			{
-				_putchar(b * c + '0');
-				if (b != a)
+				_putchar(a * b + '0');
+				if (a != n)
 				{
 					_putchar(',');
 				}
 			}
 		}
-		b = 0;
+		a = 0;
 		_putchar('\n');
 	}
 }	
