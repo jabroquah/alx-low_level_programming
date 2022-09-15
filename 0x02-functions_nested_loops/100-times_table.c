@@ -11,36 +11,46 @@ void print_times_table(int n)
 {
 	int a = 0;
 	int b = 0;
-	int units, tens;
 
-	if (n < 0 || n > 15)
+	if (n >= 0 && n <= 15)
 	{
-		return;
-	}
-
-	for (a = 0; b <= n; b++)
-	{
-		for (a = 0; a <= n; a++)
+		for (a = 0; b <= n; b++)
 		{
-			if (a * b >= 10 && a * b < 100)
-			{
-				units = a * b % 10;
-				tens = a * b / 10;
-				_putchar(tens + '0');
-				_putchar(units + '0');
+			for (a = 0; a <= n; a++)
+			{		
+				if (a * b >= 100)
+				{
+					_putchar(a * b / 100 + '0');
+					_putchar(a * b / 10 + '0');
+					_putchar(a * b % 10 + '0');
+					if (a != n)
+					{
+						_putchar(' ');
+					}
+				}
+				if (a * b >= 10 && a * b < 100)
+				{
+					_putchar(a * b / 10 + '0');
+					_putchar(a * b % 10 + '0');
+					if (a != n)
+					{
+						_putchar(',');
+						_putchar(' ');
+					}
+				}
+				if (a * b < 10)
+				{
+					_putchar(a * b + '0');
+					if (a != n)
+					{
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+					}
+				}
 			}
-			if (a * b < 10)
-			{
-				_putchar(a * b + '0');
-				
-			}
-			if (a != n)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			a = 0;
+			_putchar('\n');
 		}
-		a = 0;
-		_putchar('\n');
 	}
-}
+}	
