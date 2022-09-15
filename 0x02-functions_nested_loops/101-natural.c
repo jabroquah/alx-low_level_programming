@@ -19,11 +19,11 @@ int main(void)
 	{
 		if ((a % 3) == 0)
 		{
-			sum3 = sum + a;
+			sum3 = sum3 + a;
 		}
 		else if ((a:w % 5) == 0)
 		{
-			sum5 = sum + a;
+			sum5 = sum5 + a;
 		}
 	}
 	sum = sum3 + sum5;
