@@ -11,7 +11,7 @@ void print_times_table(int n)
 {
 	int a = 0;
 	int b = 0;
-	int units, tens, hundreds;
+	int units, tens;
 
 	if (n < 0 || n > 15)
 	{
