@@ -15,13 +15,13 @@ int main(void)
 	sum5 = 0;
 	sum = 0;
 
-	for (a = 0; a < 1024; ++a)
+	for (a = 0; a < 1024; a++)
 	{
 		if ((a % 3) == 0)
 		{
 			sum3 = sum3 + a;
 		}
-		else if ((a:w % 5) == 0)
+		else if ((a % 5) == 0)
 		{
 			sum5 = sum5 + a;
 		}
