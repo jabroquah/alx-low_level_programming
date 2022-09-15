@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -31,35 +30,26 @@ void print_times_table(int n)
 				_putchar(hundreds + '0');
 				_putchar(tens + '0');
 				_putchar(units + '0');
-				if (a != n)
-				{
-					_putchar(',');
-					_putchar(9);
-				}
 			}
-			else if (a * b >= 10 && a * b < 100)
+			if (a * b >= 10 && a * b < 100)
 			{
 				units = a * b % 10;
 				tens = a * b / 10;
 				_putchar(tens + '0');
 				_putchar(units + '0');
-				if (a != n)
-				{
-					_putchar(',');
-					_putchar(9);
-				}
 			}
-			else
+			if (a * b < 10)
 			{
 				_putchar(a * b + '0');
-				if (a != n)
-				{
-					_putchar(',');
-					_putchar(9);
-				}
+				
 			}
-			a = 0;
-			_putchar('\n');
+			if (a != n)
+			{
+				_putchar(',');
+				_putchar(9);
+			}
 		}
+		a = 0;
+		_putchar('\n');
 	}
 }
