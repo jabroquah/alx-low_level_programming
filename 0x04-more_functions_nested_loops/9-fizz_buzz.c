@@ -8,10 +8,10 @@
  * For numbers which are multiples of both 3 and 5 print
  * FizzBuzz
  *
- * Return: void
+ * Return: 0 if successful
  */
 
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -42,5 +42,6 @@ void main(void)
 		}
 	}
 	printf("\n");
-	return ;
+
+	return (0);
 }
