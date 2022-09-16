@@ -42,4 +42,5 @@ void main(void)
 		}
 	}
 	printf("\n");
+	return ;
 }
