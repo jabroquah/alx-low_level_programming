@@ -25,8 +25,8 @@ void rev_string(char *a)
 		for (startIndex = 0; startIndex <= mid; backIndex--, startIndex++)
 		{
 			temp = *(a + startIndex);
-			*(s + startIndex) = *(s + backIndex);
-			*(s + backIndex) = temp; 
+			*(a + startIndex) = *(a + backIndex);
+			*(a + backIndex) = temp; 
 		}
 	}
 
