@@ -3,13 +3,13 @@
 
 
 /**
-* print_rev - prints a string in reverse followed by a new line_
+* print_rev - prints a string in reverse followed by a new line
 *
 * @a: pointer to string
 *
 */
 
-void _puts(char *a)
+void _print_rev(char *a)
 {
 	int index = 0;
 
