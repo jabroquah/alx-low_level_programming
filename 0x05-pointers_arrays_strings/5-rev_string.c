@@ -28,6 +28,5 @@ void rev_string(char *a)
 			*(a + startIndex) = *(a + backIndex);
 			*(a + backIndex) = temp; 
 		}
-		putchar('\n');
 	}
 }
