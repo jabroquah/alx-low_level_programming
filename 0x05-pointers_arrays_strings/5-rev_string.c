@@ -24,7 +24,7 @@ void rev_string(char *a)
 
 		for (startIndex = 0; startIndex <= mid; backIndex--, startIndex++)
 		{
-			backIndex = (startIndex == mid && length % 2 == 0) ? backIndex++ : backIndex;
+			backIndex = (startIndex == mid && length % 2 == 0) ? backIndex++ : backIndex + 0;
 			temp = *(a + startIndex);
 			*(a + startIndex) = *(a + backIndex);
 			*(a + backIndex) = temp;
