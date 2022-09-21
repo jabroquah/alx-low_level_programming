@@ -19,8 +19,6 @@ void print_rev(char *a)
 		putchar(*(a + index));
 		index--;
 	}
-	if (index == -1)
-	{
-		_putchar('\n');
-	}
+	putchar('\n');
+
 }
