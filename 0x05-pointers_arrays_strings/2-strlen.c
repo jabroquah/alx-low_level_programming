@@ -13,9 +13,10 @@
 int _strlen(char *a)
 {
 	int index = 0;
+
 	while (*(a + index) != '\0')
 	{
 		index++;
 	}
-	return index;
+	return (index);
 }
