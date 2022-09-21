@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include "2-strlen.c"
 
 
 /**
@@ -11,16 +11,12 @@
 
 void print_rev(char *a)
 {
-	int index = 0;
 
-	while (*(a + index) != '\0')
-	{
-		index++;
-	}
+	int index = _strlen(a) - 1;
 
-	while (index > 0)
+	while (index >= 0)
 	{
-		putchar(*(a + (index - 1)));
+		putchar(*(a + index));
 		index--;
 	}
 	_putchar('\n');
