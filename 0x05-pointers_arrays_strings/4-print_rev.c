@@ -9,7 +9,7 @@
 *
 */
 
-void _print_rev(char *a)
+void print_rev(char *a)
 {
 	int index = 0;
 
