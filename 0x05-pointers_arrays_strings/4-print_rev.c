@@ -3,7 +3,7 @@
 
 
 /**
-* _puts - prints a string followed by a new line_
+* print_rev - prints a string in reverse followed by a new line_
 *
 * @a: pointer to string
 *
@@ -15,8 +15,13 @@ void _puts(char *a)
 
 	while (*(a + index) != '\0')
 	{
-		_putchar(*(a + index));
 		index++;
+	}
+
+	while (index > 0)
+	{
+		putchar(*(a + (index - 1)));
+		index--;
 	}
 	_putchar(10);
 }
