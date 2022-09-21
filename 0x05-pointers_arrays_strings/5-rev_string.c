@@ -14,7 +14,7 @@ void rev_string(char *a)
 
 	int backIndex, startIndex, length, mid, temp;
 
-	length = _strlen(a)
+	length = _strlen(a);
 	startIndex = 0;
 	backIndex = length - 1;
 
