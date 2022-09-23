@@ -11,14 +11,14 @@
 char *leet(char *s)
 {
 	char key = {65, 52, 69, 51, 79, 48, 84, 55, 76, 49};
-	int stringIndex, keyIndex;
+	int stIndex, keyIndex;
 
-	for (stringIndex = 0; s[stringIndex] != '\0'; stringIndex++)
+	for (strIndex = 0; s[strIndex] != '\0'; strIndex++)
 	{
 		for (keyIndex = 0; keyIndex < 10; keyIndex += 2)
 		{
-			if ((s[stringIndex] == key[keyIndex] || s[stringIndex] == (key[keyIndex] + 32)))
-				s[stringIndex] = key[keyIndex + 1];
+			if ((s[strIndex] == key[keyIndex] || s[strIndex] == (key[keyIndex] + 32)))
+				s[strIndex] = key[keyIndex + 1];
 		}
 	}
 
