@@ -18,7 +18,7 @@ char *leet(char *s)
 		for (keyIndex = 0; keyIndex < 10; keyIndex += 2)
 		{
 			if ((s[stringIndex] == key[keyIndex] || s[stringIndex] == (key[keyIndex] + 32)))
-				s[stingIndex] = key[keyIndex + 1];
+				s[stringIndex] = key[keyIndex + 1];
 		}
 	}
 
