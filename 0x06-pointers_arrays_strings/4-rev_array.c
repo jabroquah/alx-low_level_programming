@@ -19,10 +19,8 @@ void reverse_array(int *a, int n)
 
 	for (; frontIndex <= stopIndex; frontIndex++, backIndex--)
 	{
-		if (n % 2 == 1 && frontIndex == stopIndex)
-		{
+		if (n % 2 == 1 && (frontIndex == stopIndex))
 			break;
-		}
 		temp = *(a + frontIndex);
 		*(a + frontIndex) = *(a + backIndex);
 		*(a + backIndex) = temp;
