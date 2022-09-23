@@ -13,7 +13,7 @@ int _strcmp(char *s1, char *s2)
 	int index = 0, difference = 0; 
 
 
-	while (difference == 0)
+	while (difference == 0 && *(s1 + index) != '\0' && *(s2 + index != '\0')
 	{
 		difference = *(s1 + index) - *(s2 + index);
 		index++;
