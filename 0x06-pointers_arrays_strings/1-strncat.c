@@ -27,6 +27,7 @@ char *_strcat(char *dest, char *src, int n)
 		*(dest + destIndex + srcIndex) = *(src + srcIndex);
 	}
 
+	*(dest + destIndex +srcIndex) = '\0';
 
 	return (dest);
 }
