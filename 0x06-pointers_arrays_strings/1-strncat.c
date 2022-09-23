@@ -16,7 +16,6 @@ char *_strncat(char *dest, char *src, int n)
 	int destIndex = 0;
 	int srcIndex = 0;
 
-	/** Terminating null byte considered */
 	while (*(dest + destIndex) != '\0')
 	{
 		destIndex++;
