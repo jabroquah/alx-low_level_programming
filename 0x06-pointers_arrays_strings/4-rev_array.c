@@ -17,7 +17,7 @@ void reverse_array(int *a, int n)
 	backIndex = n - 1;
 	temp = 0;
 
-	for (; frontIndex <= stopIndex; frontIndex++, backIndex--)
+	for (frontIndex = 0; frontIndex <= stopIndex; frontIndex++, backIndex--)
 	{
 		if (n % 2 == 1 && (frontIndex == stopIndex))
 			break;
