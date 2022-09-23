@@ -8,16 +8,17 @@
  *
  * Return: destination string
  */
+
 char *_strncpy(char *dest, char *src, int n)
 {
-	int startIndex = 0;
+	int index;
 
-	for (; startIndex < n && *(src + startIndex) != '\0'; startIndex++)
+	for (index = 0; index < n && *(src + index) != '\0'; index++)
 	{
-		*(dest + startIndex) = *(src + startIndex);
+		*(dest + index) = *(src + index);
 	}
 
-	*(dest + startIndex) = '\0';
+	*(dest + index) = '\0';
 
 	return (dest);
 }
