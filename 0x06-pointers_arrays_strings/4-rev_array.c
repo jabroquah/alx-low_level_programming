@@ -6,6 +6,7 @@
  * @a: array to be reversed
  * @n: the number of elements to swap
  *
+ * Return: void
  */
 
 
