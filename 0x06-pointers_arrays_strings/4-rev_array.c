@@ -14,16 +14,15 @@ void reverse_array(int *a, int n)
 {
 	int frontIndex, stopIndex, backIndex, temp;
 
-
-	if (n == 0)
-	{
-		return ;
-	}
-
 	stopIndex = (n - 1) / 2;
 	frontIndex = 0;
 	backIndex = n - 1;
 	temp = 0;
+	if (n == 0)
+	{
+		return;
+	}
+
 
 	for (; frontIndex <= stopIndex; frontIndex++, backIndex--)
 	{
