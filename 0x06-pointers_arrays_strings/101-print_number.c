@@ -6,9 +6,10 @@
  *
  * Return: void
  */
+
 void print_number(int n)
 {
-	unsigned int number, d, count;
+	unsigned int number, count;
 
 	if (n < 0)
 	{
@@ -21,7 +22,6 @@ void print_number(int n)
 
 	while (number >= 10)
 	{
-
 		number /= 10;
 		count *= 10;
 	}
