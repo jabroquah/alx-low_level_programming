@@ -9,7 +9,7 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *result = haystack;
+	char *result = haystack, needleCopy = needle;
 
 	while (*haystack)
 	{
@@ -24,6 +24,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 			return (result);
 		}
+		needle = needleCopy;
 		result++;
 		haystack = result;
 	}
