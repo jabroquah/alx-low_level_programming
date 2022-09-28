@@ -3,12 +3,13 @@
 
 /**
  * infinite_add - adds two numbers
- * @n1: Number one
- * @n2: Number two
+ * @n1: augend
+ * @n2: addend
  * @r: buffer for the result
- * @size_r: Size of buffer
+ * @size_r: size of buffer
  * Return: the pointer to result
  */
+
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int c1 = 0, c2 = 0, op, bg, dr1, dr2, add = 0;
