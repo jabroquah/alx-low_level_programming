@@ -20,7 +20,7 @@ void _puts_recursion(char *s)
 		putchar(*(s + 0));
 		_puts_recursion(s + *index + 1);
 	}
-	if (strlen(s) == *(index))
+	if (strlen(s) - *(index) == 0)
 	{
 		putchar('\n');
 	}
