@@ -5,6 +5,7 @@
  * @argc: number of command line arguments
  * @argv: argument vector
  *
+ * Return: 0
  */
 
 void main(int argc,  char *argv[])
@@ -14,12 +15,16 @@ void main(int argc,  char *argv[])
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
-		return;
 	}
-	while (*argv)
+	else
 	{
-		argv++;
-		n++;
+		for (; *argv ;)
+		{
+			argv++;
+			n++;
+		}
+		printf("%d\n", n - 1);
 	}
-	printf("%d\n", n - 1);
+
+	return (0);
 }

@@ -5,10 +5,11 @@
  * @argc: argument count
  * @argv: argument Vector
  *
+ * Return: 0
  */
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[argc - argc]);
-
+	return (0);
 }
