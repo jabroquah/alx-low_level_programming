@@ -1,11 +1,11 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - prints anything
- * @format: a list of types of arguments passed to the function
+ * print_all - prints anything.
+ * @format: a list of types of arguments passed to the function.
  *
+ * Return: no return.
  */
-
 void print_all(const char * const format, ...)
 {
 	va_list valist;
@@ -14,7 +14,6 @@ void print_all(const char * const format, ...)
 	const char t_arg[] = "cifs";
 
 	va_start(valist, format);
-
 	while (format && format[i])
 	{
 		j = 0;
@@ -26,7 +25,6 @@ void print_all(const char * const format, ...)
 				break;
 			} j++;
 		}
-		
 		switch (format[i])
 		{
 		case 'c':
