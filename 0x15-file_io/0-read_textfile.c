@@ -8,6 +8,7 @@
  *
  * Return: numbers of letters printed or 0 if fails
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
@@ -34,5 +35,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	free(buffer);
 
-	return (nwr);
+	return (wr);
 }
